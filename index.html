@@ -13,20 +13,20 @@
   <body>
     <div class="container">
       <div class="header">
-        <h2>Create Account</h2>
+        <h3>Create Account</h3>
       </div>
 
-      <form class="form" id="form">
-        <div class="form-control success">
-          <label for="">Username</label>
+      <form class="form" id="form" novalidate>
+        <div class="form-control">
+          <label for="username">Username</label>
           <input type="text" placeholder="milad2021" id="username" />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error message</small>
         </div>
 
-        <div class="form-control error">
-          <label for="">Email</label>
+        <div class="form-control">
+          <label for="email">Email</label>
           <input type="email" placeholder="example@mail.com" id="email" />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
@@ -49,8 +49,10 @@
           <small>Error message</small>
         </div>
 
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
+
+    <script src="validate.js"></script>
   </body>
 </html>

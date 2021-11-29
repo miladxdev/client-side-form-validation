@@ -3,20 +3,21 @@
 }
 
 body {
-  background-color: rgb(235, 235, 235);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  font-family: "@Microsoft YaHei light";
+  font-family: "@Microsoft YaHei light", sans-serif;
 }
 
 .container {
   background-color: #fafafa;
   border-radius: 20px;
-  box-shadow: 0 4px 100px -10px lightgray;
-  width: 380px;
+  border: 1px solid #d7d8e2;
+  box-shadow: 0 8px 60px -8px #d7d8e2;
+  width: 350px;
   max-width: 100%;
   overflow: hidden;
 }
@@ -24,12 +25,11 @@ body {
 .header {
   background-color: #f7f7f7;
   border-bottom: 2px solid #f0f0f0;
-  padding: 20px 40px;
+  padding: 20px;
 }
-.header h2 {
+.header h3 {
   margin: 0;
 }
-
 .form {
   padding: 30px 20px;
 }
@@ -37,22 +37,23 @@ body {
 .form-control {
   position: relative;
   margin-bottom: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; /* to fit small tag */
 }
 
 .form-control label {
-  display: inline-block;
+  display: block;
   margin-top: 5px;
 }
 
 .form-control input {
   border: 2px solid #f0f0f0;
-  border-radius: 4px;
+  border-radius: 8px;
   display: block;
   font-size: 14px;
   font-family: inherit;
   width: 100%;
   padding: 10px;
+  transition: 0.3s ease;
 }
 .form-control.success input {
   border-color: #2ecc71;
@@ -90,9 +91,9 @@ body {
 }
 
 .form button {
-  background-color: #000;
-  border: 2px solid #000;
-  border-radius: 4px;
+  background-color: #121212;
+  border: none;
+  border-radius: 8px;
   color: #fff;
   display: block;
   font-family: inherit;
@@ -103,5 +104,8 @@ body {
   transition: background 0.3s;
 }
 .form button:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #2a2a2a;
+}
+.form button:active {
+  background-color: #121212;
 }
